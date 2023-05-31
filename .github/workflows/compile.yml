@@ -43,7 +43,6 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: dist
-      - run: rm -f DNOME.css
       - uses: actions/download-artifact@v3
         with:
           name: DNOME
