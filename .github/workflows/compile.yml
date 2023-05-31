@@ -47,9 +47,9 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: DNOME
+      - run: ls -la
       - name: Commit files
         run: |
-          mv **/DNOME.css ./DNOME.css
           git add -f ./DNOME.css
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
